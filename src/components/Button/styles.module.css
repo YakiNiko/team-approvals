@@ -1,0 +1,46 @@
+
+.editSchemeButton {
+  font-weight: 600;
+  min-width: 120px;
+  font-size: 1em;
+  padding: 1em;
+  background-color: #5d21d2;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  cursor: pointer;
+}
+
+.primary {
+  font-weight: 800;
+  min-width: 120px;
+  font-size: 1em;
+  padding: 1em;
+  background-color: #5d21d2;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+.secondary {
+  min-width: 120px;
+  font-size: 1em;
+  padding: 1em;
+  border: none;
+  background-color: none;
+  cursor: pointer;
+}
+
+.dotted {
+  font-weight: 800;
+  width: 100%;
+  font-size: 1em;
+  padding: 1em;
+  background-color: transparent;
+  border: 2px dashed grey;
+  border-radius: 2px;
+  margin-top: 1em;
+  cursor: pointer;
+}

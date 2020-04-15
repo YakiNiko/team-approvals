@@ -1,0 +1,61 @@
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.teamName {
+  width: 25%;
+}
+
+.usersContainer {
+  display: flex;
+  flex: 1 1 100%;
+}
+
+.usersList {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  max-width: 150px;
+  font-size: 10px;
+  margin-right: 1em;
+}
+
+.approverName {
+  background: #dbc8ff;
+  color: black;
+  font-size: 10px;
+  padding: 0.5em;
+  margin-top: 0.2em;
+}
+
+.userName {
+  margin-top: 0.2em;
+  background: rgb(211, 211, 211);
+  color: black;
+  font-size: 10px;
+  padding: 0.5em;
+}
+
+.more {
+  color: black;
+  font-size: 10px;
+  margin-top: 1em;
+  line-height: 0;
+}
+
+.editSchemeButton {
+  font-weight: 600;
+  min-width: 120px;
+  font-size: 1em;
+  padding: 1em;
+  background-color: #5d21d2;
+  border: none;
+  border-radius: 2px;
+  color: white;
+}

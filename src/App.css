@@ -1,0 +1,10 @@
+.App {
+  padding: 3em;
+  background-color: #fafafc;
+  height: 100%;
+}
+
+.App-header {
+  height: 5em;
+  display: flex;
+}
