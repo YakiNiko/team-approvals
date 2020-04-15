@@ -47,7 +47,7 @@ export default function ApprovalTeam({ teamData: { id, name, users } }) {
           if (index < 3) {
             return (
               <div key={Math.random(1) * 100} className={styles.approverName}>
-                {`${user.userData.first_name} ${user.userData.last_name}`}
+                {`${user.first_name} ${user.last_name}`}
               </div>
             );
           }

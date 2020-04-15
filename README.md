@@ -59,7 +59,6 @@ src/
 
 ### Known bugs
 
-- Persisted data from local storage can't be edited (most likely due to the data structure that has too much nesting)
 - Persist whitelist doesn't whitelist at all
 - Redux dev tools are disabled because they make Cypress crash, damn
 - API comes with invalid data (2 objects with the same id), but you already know

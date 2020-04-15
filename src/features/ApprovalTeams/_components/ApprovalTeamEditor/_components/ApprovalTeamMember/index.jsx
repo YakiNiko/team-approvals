@@ -6,8 +6,9 @@ import Select from 'react-select';
 
 export default function ApprovalTeamMember({
     userName,
-    amountRange,
     index,
+    max,
+    min,
     amountUpdateAction,
     deleteAction,
     userUpdateAction,
@@ -17,7 +18,7 @@ export default function ApprovalTeamMember({
 
   const [isEditingUser, setUserEdit] = useState(false);
   const [isEditingAmount, setAmountEdit] = useState(false);
-  const [amountValue, setAmountValue] = useState(amountRange.max);
+  const [amountValue, setAmountValue] = useState(max);
   const inputRef = useRef(null);
 
   const amountEditHandler = () => {
@@ -57,13 +58,13 @@ export default function ApprovalTeamMember({
       </div>
       <div className={styles.amountRange}>
         {index === 0 && <div>Up to</div>}
-        {index > 0 && <div>From {amountRange.min} to</div>}
+        {index > 0 && <div>From {min} to</div>}
         {!isEditingAmount && (
           <div 
             data-cy={`edit-amount-field-${index+1}`}
             onClick={amountEditHandler} className={styles.valueTextfield}
           >
-            {amountRange.max}
+            {max}
           </div>
         )}
         {
