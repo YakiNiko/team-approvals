@@ -50,15 +50,15 @@ export default function ApprovalSchemeEditor() {
     const updatedScheme = currentScheme.map((item, i) => {
       if (i === index) {
         const nextMember = currentScheme[i + 1];
-        if (value > item.min && (!nextMember || value <= nextMember.min)) {
-          item.max = value;
-          return item;
+        if (value > item.min && (!nextMember || value <= nextMember.max)) {
+          const newItem = { ...item, max: value }
+          return newItem;
         }
         return item;
       }
       else if(i === index + 1 && value < item.max) { // value can't be superior to next user max value
-          item.min = value;
-          return item;
+        const newItem = { ...item, min: value }
+        return newItem;
       }
       else return item;
     });
@@ -82,14 +82,14 @@ export default function ApprovalSchemeEditor() {
         .map((item, index, array) => {
           if(index === userIndex) {
             if (userIndex === 0) {
-              item.min = 0;
-              return item;
+              const newItem = { ...item, min: 0 }
+              return newItem;
             }
             else {
               const previousData = array[index - 1];
               if (previousData.max < item.min) {
-                item.min = previousData.max;
-                return item;
+                const newItem = { ...item, min: previousData.max }
+                return newItem;
               }
               return item;
             }
