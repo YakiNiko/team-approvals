@@ -1,5 +1,8 @@
 # Teams Approval Management
 
+### Important
+!!! Please clear local storage if you ran a previous version !!!
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -58,7 +61,6 @@ src/
   - _components/: business logic sub components
 
 ### Known bugs
-
 - Persist whitelist doesn't whitelist at all
 - Redux dev tools are disabled because they make Cypress crash, damn
 - API comes with invalid data (2 objects with the same id), but you already know
